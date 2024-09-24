@@ -1,0 +1,94 @@
+*{
+  margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+.navbar{
+  height: 75px;
+  background-color: black;
+}
+.navbar div{
+  width: 33.3%;
+  float: left;
+}
+.navbar .logo{
+  display: flex;
+height: 75px;
+  align-items: center;
+padding-left: 10px;
+}
+.navbar .logo img{
+  width: 50px;
+  border-radius: 50%;
+}
+.navbar .center{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.navbar .center ul li{
+  display: inline;
+  padding-left: 7px;
+  padding-right: 15px;
+}
+.navbar .center ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-bottom:2px solid black;
+border-color: black;
+transition: border-color 1s;
+  letter-spacing: 2px;
+
+
+
+}
+.navbar .center a:hover{
+border-color: white;
+}
+
+
+
+
+.navbar .right{
+text-align: right;
+  padding-right: 10px;
+padding-top: 20px;
+  height: 75px;
+
+
+}
+
+.navbar .right button{
+  width: 85px;
+  height: 25px;
+  border-radius: 24px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  transition: 1.5s;
+  animation: glow 1.5s infinite
+}
+
+.right button:hover {
+ background-color: white;
+  color: black;
+  border: 2px solid grey;
+  box-shadow: 1px 1px white;
+
+
+}
+
+@keyframes glow {
+  0% {
+         box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+     }
+     50% {
+         box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+     }
+     100% {
+         box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+     }
+}
