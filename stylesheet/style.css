@@ -3,9 +3,14 @@
 padding: 0px;
 box-sizing: border-box;
 }
+
+
+
 .navbar{
   height: 75px;
+
   background-color: black;
+
 }
 .navbar div{
   width: 33.3%;
@@ -81,6 +86,20 @@ padding-top: 20px;
 
 }
 
+.toggler ul li{
+  display: inline;
+}
+.toggler{
+  background-color: black;
+}
+.toggler a{
+  padding: 5px;
+  letter-spacing: 4px;
+  color: white;
+  text-decoration: none;
+
+}
+
 @keyframes glow {
   0% {
          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -91,4 +110,162 @@ padding-top: 20px;
      100% {
          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
      }
+}
+
+
+.Topics{
+display: none;
+}
+@media screen and (max-width: 855px) and (min-width: 600px) {
+  .center {
+    width: 40% !important;
+  }
+  .center li {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .right{
+    width: 25% !important;
+  }
+}
+
+
+.Information{
+  width: 100%;
+  height: 350px;
+  background-color: red;
+  margin-top: 10px;
+}
+.Info-Container{
+  width: 75%;
+  margin:auto;
+  background-color: black;
+  height: 350px;
+}
+.Info-Container div{
+  float: left;
+}
+.info{
+  width: 50%;
+  height: 350px;
+  background-color: blue;
+
+}
+.SocialMedia img{
+  width: 40px;
+}
+.SocialMedia .InstagramHover{
+  position: absolute;
+  opacity: 1;
+  border-radius: 50%;
+  transition: opacity 0.75s;
+}
+.InstagramNormal{
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.InstagramHover:hover {
+  opacity: 0;
+
+}
+
+.SocialMedia .LinkedinHover{
+  position: absolute;
+  opacity: 1;
+  border-radius: 50%;
+  transition: opacity 0.75s;
+}
+.LinkedinNormal{
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.LinkedinHover:hover {
+  opacity: 0;
+
+}
+.Linkedin{
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MyImage{
+  width: 50%;
+  height: 350px;
+  background-color: green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .right{
+    display:none;
+  }
+
+.center{
+  display: none !important;
+}
+
+
+
+ /*.logo{
+width: 100% !important;
+display: block !important;
+text-align: center;
+padding-top: 10px;
+clear: both;
+}
+*/
+.logo{
+  display: none !important;
+}
+.navbar{
+  display: none;
+}
+
+.Topics{
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: black
+
+}
+.toggler li{
+  border-bottom:2px solid black;
+
+border-color: black;
+transition: border-color 1s;
+  letter-spacing: 2px;
+}
+.toggler li:hover{
+border-color: white;
+  padding: 5px;
+}
+
+
 }
