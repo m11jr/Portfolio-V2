@@ -315,7 +315,7 @@ align-items: center;
 */
 .EduRoadText{
   margin: auto;
-  width: 75%;
+  width: 80%;
 
   height: 350px;
 
@@ -337,9 +337,16 @@ align-items: center;
 }
 */
 
+.EduRoadText table td{
+  padding-top: 15px;
+}
+
 .EduRoadText table tr td{
-  padding: 40px;
-  font-size: 1.2vw;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  font-size: 1.4vw;
+
+
 }
 
 .TehsilNazir{
@@ -371,13 +378,16 @@ align-items: center;
 
 @media screen and (min-width:992px) and (max-width:1199px) {
 
+
+
+
 .EduRoadText{
   width: 100%;
 }
 
 .EduRoadText table tr td{
   padding: 30px;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
 }
 
 
@@ -395,7 +405,7 @@ align-items: center;
 
   .EduRoadText table tr td{
     padding: 25px;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 }
 
@@ -406,18 +416,38 @@ align-items: center;
   }
 
   .EduRoadText table tr td{
+    padding-right: 0px !important;
     padding: 25px;
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width:600px) {
+  .Info-Container{
+    width: 90%;
+  }
+
+  .info .Text h2{
+    font-size: 4.5vw;
+  }
+  .info .Text article{
+    font-size: 1.75vw;
+  }
+  .SocialMedia img{
+    width: 30px;
+  }
+  .MyImage img{
+    width: 90%;
+  }
   .EducationContainer{
-    width: 80%;
+    width: 100%;
   }
 
   .EduRoadText table tr td{
     padding: 25px;
-    font-size: 2vw;
+    font-size: 3.5vw;
+  }
+  .EducationPart h4{
+    font-size: 4.5vw;
   }
 }
