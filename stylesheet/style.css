@@ -40,6 +40,9 @@ padding-left: 10px;
 }
 .navbar .center ul li a{
   color: white;
+  font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-style: normal;
   text-decoration: none;
   padding: 8px;
   border-bottom:2px solid black;
@@ -116,49 +119,38 @@ padding-top: 20px;
 .Topics{
 display: none;
 }
-@media screen and (max-width: 855px) and (min-width: 600px) {
-  .center {
-    width: 40% !important;
-  }
-  .center li {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-  }
-  .right{
-    width: 25% !important;
-  }
-}
-
 
 .Information{
   width: 100%;
   height: 350px;
-  background-color: red;
-  margin-top: 10px;
+background-color: #393e46;
+  margin-top: 2px;
 }
 .Info-Container{
   width: 75%;
   margin:auto;
-  background-color: black;
+
   height: 350px;
 }
-.Info-Container div{
+.Info-Container .info, .Info-Container .MyImage{
   float: left;
 }
 .info{
   width: 50%;
   height: 350px;
-  background-color: blue;
+
 
 }
 .SocialMedia img{
   width: 40px;
+  border: 2px solid black;
 }
 .SocialMedia .InstagramHover{
   position: absolute;
   opacity: 1;
   border-radius: 50%;
   transition: opacity 0.75s;
+  animation: glow 2.5s infinite
 }
 .InstagramNormal{
   opacity: 1;
@@ -175,6 +167,7 @@ display: none;
   opacity: 1;
   border-radius: 50%;
   transition: opacity 0.75s;
+  animation: glow 2.5s infinite
 }
 .LinkedinNormal{
   opacity: 1;
@@ -190,12 +183,75 @@ display: none;
 }
 
 
+.SocialMedia .GitHover{
+  position: absolute;
+  opacity: 1;
+  border-radius: 50%;
+  transition: opacity 0.75s;
+  animation: glow 2.5s infinite
+}
+.GitNormal{
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.GitHover:hover {
+  opacity: 0;
+
+}
+.Git{
+  margin-left: 5px;
+}
 
 
+.SocialMedia div{
+  display: block;
+}
+
+.info h2, .info article{
+  color: white;
+}
+
+.info{
+
+}
+.SocialMedia{
+display: block !important;
+text-align: center;
+margin-top: 10px;
+
+}
 
 
+.SocialMedia div{
+  display: inline
+}
+.Text{
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+}
+.Text h2{
+  font-size: 3.4vw;
+  font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+.Text article{
+  font-size: 1.3vw;
+
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 
 
+}
+.SocialMedia a{
+  text-decoration: none;
+}
 
 
 
@@ -204,68 +260,164 @@ display: none;
 .MyImage{
   width: 50%;
   height: 350px;
-  background-color: green;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.MyImage img{
+  width: 52%;
+  border: 2px solid black;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+    animation: glow 1.5s infinite
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:600px) {
-  .right{
-    display:none;
-  }
-
-.center{
-  display: none !important;
+.EducationPart{
+  width: 100%;
+  height: 350px;
+  margin-top: 5px;
 }
+.EducationPart h4{
+  color: #393e46;
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+.EducationContainer{
 
+  width: 50%;
+  height: 350px;
+  margin: auto;
 
+}
+.EducationContainer {
 
- /*.logo{
-width: 100% !important;
-display: block !important;
-text-align: center;
-padding-top: 10px;
-clear: both;
+}
+/*
+ .EduRoadpng{
+  width: 20%;
+  height: 350px;
+
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+
+}
+.EduRoadpng img{
+  margin-top: 20px;
 }
 */
-.logo{
-  display: none !important;
-}
-.navbar{
-  display: none;
-}
+.EduRoadText{
+  margin: auto;
+  width: 75%;
 
-.Topics{
-  position: sticky;
+  height: 350px;
+
+  color: #393e46;
+
+}
+.EduRoadText ul{
+  list-style-type: disc;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+
+}
+/*
+.EduRoadText ul li{
+  font-size: 1.5vw;
+  text-align: center;
+}
+*/
+
+.EduRoadText table tr td{
+  padding: 40px;
+  font-size: 1.2vw;
+}
+
+.TehsilNazir{
   width: 100%;
-  height: 60px;
-  background-color: black
+}
+.Ozu{
+  width: 60%;
 
 }
-.toggler li{
-  border-bottom:2px solid black;
-
-border-color: black;
-transition: border-color 1s;
-  letter-spacing: 2px;
+.edulogos .Ozyegin{
+  display: flex !important;
+  justify-content: center !important;
 }
-.toggler li:hover{
-border-color: white;
-  padding: 5px;
+.Vistula{
+  width: 100%;
 }
 
+.edulogos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  list-style-type: none;
+}
 
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+.EduRoadText{
+  width: 100%;
+}
+
+.EduRoadText table tr td{
+  padding: 30px;
+  font-size: 1.5vw;
+}
+
+
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+
+  .EducationContainer{
+    width: 70%;
+  }
+
+  .EduRoadText table tr td{
+    padding: 25px;
+    font-size: 1.6vw;
+  }
+}
+
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .EducationContainer{
+    width: 70%;
+  }
+
+  .EduRoadText table tr td{
+    padding: 25px;
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .EducationContainer{
+    width: 80%;
+  }
+
+  .EduRoadText table tr td{
+    padding: 25px;
+    font-size: 2vw;
+  }
 }
