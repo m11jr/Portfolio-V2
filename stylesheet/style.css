@@ -277,7 +277,7 @@ align-items: center;
 
 .EducationPart{
   width: 100%;
-  height: 350px;
+  height: 450px;
   margin-top: 5px;
 }
 .EducationPart h4{
@@ -376,6 +376,11 @@ align-items: center;
 
 
 
+
+
+
+
+
 @media screen and (min-width:992px) and (max-width:1199px) {
 
 
@@ -394,11 +399,42 @@ align-items: center;
 
 }
 
+.Tech{
+  height: 425px;
+  width: 100%;
+  background-color: red;
+}
+.Tech-container{
+  height: 350px;
+  width: 75%;
+  margin: auto;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Tech-container ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Tech h4{
+  color: #393e46;
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+
+
 
 
 @media screen and (min-width:768px) and (max-width:991px) {
-
-
+.EducationPart h4{
+  font-size: 2.75vw;
+}
   .EducationContainer{
     width: 70%;
   }
@@ -411,6 +447,10 @@ align-items: center;
 
 
 @media screen and (min-width:600px) and (max-width:767px) {
+  .EducationPart h4{
+    font-size: 2.85vw;
+  }
+
   .EducationContainer{
     width: 70%;
   }
@@ -420,24 +460,44 @@ align-items: center;
     padding: 25px;
     font-size: 3vw;
   }
+  .MyImage img{
+    width: 85%;
+  }
+.Text h2{
+  font-size: 4vw;
+}
 }
 
 @media screen and (max-width:600px) {
+.Information{
+  height: 300px;
+}
+
+
   .Info-Container{
     width: 90%;
+    height: 300px;
   }
+  .info{
+    height: 300px;
+  }
+
+
 
   .info .Text h2{
     font-size: 4.5vw;
   }
   .info .Text article{
-    font-size: 1.75vw;
+    font-size: 2.5vw;
   }
   .SocialMedia img{
     width: 30px;
   }
+  .MyImage{
+    height: 300px;
+  }
   .MyImage img{
-    width: 90%;
+    width: 85%;
   }
   .EducationContainer{
     width: 100%;
